@@ -17,7 +17,7 @@ public class Application {
         FooBar fooBar = ctx.getBean(FooBar.class);
 
         log.info("foobar = {} ", fooBar.hasJdbdTemplate());
-
+        log.info("count level1 = {} ", fooBar.getCountFromLevel1());
         System.exit(0);
     }
 

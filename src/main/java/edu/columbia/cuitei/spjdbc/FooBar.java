@@ -13,4 +13,8 @@ public class FooBar {
     public boolean hasJdbdTemplate() {
         return this.jdbcTemplate != null;
     }
+
+    public int getCountFromLevel1() {
+        return jdbcTemplate.queryForObject("select count(*) from level1", Integer.class);
+    }
 }
