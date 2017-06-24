@@ -19,4 +19,6 @@ public class FooBar {
     public Timestamp now() {
         return jdbcTemplate.queryForObject("select now()", Timestamp.class);
     }
+
+
 }
