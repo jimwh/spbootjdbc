@@ -17,6 +17,7 @@ public class Application {
         FooBar fooBar = ctx.getBean(FooBar.class);
 
         log.info("foobar = {} ", fooBar.hasJdbdTemplate());
+        log.info("now = {} ", fooBar.now() );
 
         System.exit(0);
     }
